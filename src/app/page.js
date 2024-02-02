@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -37,6 +38,12 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div>
+        <Link href="/auth">auth page</Link>
+        <p>------</p>
+        <Link href="/no-auth">no-auth page</Link>
       </div>
 
       <div className={styles.grid}>
